@@ -1,0 +1,72 @@
+
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    @include font ($font-primary,16,400);
+    min-width: 320px;
+    overflow-x: hidden;
+    color: $color-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}   
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+p {
+    margin: 0;
+}
+.btn-all{
+    @include font ($font-primary,14,500);
+    max-width: 241px;
+    width: 100%;
+    padding: 12px 10px;
+    border: 0px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+.btn-main{
+    background-color: $color-primary;
+    color: #fff;
+    &:hover {
+        background-color: darken($color-primary, 10%);
+        transition: all ease .3s;
+    }
+}
+.btn-second{
+    background-color: $color-secondary;
+    color: #fff;
+    &:hover {
+        background-color: darken($color-secondary, 10%);
+        transition: all ease .3s;
+    }
+}
+.btn-accent{
+    border: 1px solid $color-text;
+    &:hover {
+        transition: all ease .3s;
+        box-shadow: 3px 2px 14px 0px #00000073;
+        border-color: #00000038;
+    }
+} 

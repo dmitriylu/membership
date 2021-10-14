@@ -1,0 +1,108 @@
+.upgrade{
+    padding: 56px 0 50px;
+}
+.upgrade__title{
+    @include font ($font-primary,40,700);
+    line-height: 47px;
+    margin-bottom: 16px;
+}
+.upgrade__text{
+    line-height: 19px;
+    margin-bottom: 75px;
+}
+
+//cards
+.upgrade-card{
+    padding: 32px 24px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.upgrade-card__header{
+    padding-bottom: 24px;
+    border-bottom: 1px solid #DFE1EB;
+}
+.upgrade-card__title{
+    font-size: 24px;
+    line-height: 28px;
+}
+.upgrade-card__body{
+    padding-top: 52px;
+}
+.upgrade-card__price{
+    @include font ($font-primary,64,700);
+    line-height: 75px;
+    color: $color-primary;
+    margin-bottom: 48px;
+    position: relative;
+    sup,
+    sub {
+        font-weight: 400;
+    }
+    sup {
+        font-size: 24px;
+        top: -40px;
+        left: -5px;
+    }
+    sub {
+        font-size: 18px;
+        bottom: -10px;
+    }
+}
+.upgrade-card__price-old {
+    position: absolute;
+    color: $color-secondary;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    right: 10px;
+    top: -30px;
+    &::after {
+        content: '';
+        position: absolute;
+        transform: rotate(-10deg);
+        width: 72px;
+        height: 3px;
+        background-color: $color-secondary;
+        left: -9px;
+        top: 13px;
+    }
+}
+.upgrade-card__btn {
+    margin-bottom: 48px;
+}
+.upgrade-card__list-item{
+    line-height: 19px;
+    margin-bottom: 18px;
+    span{
+        font-weight: 700;
+    }
+}
+.row.upgrade-cards {
+    margin-left: -24px;
+    margin-right: -24px;
+    .col-4 {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+.upgrade-card.card-premium {
+    box-shadow: 0px 0px 8px #EC9139, 0px 0px 4px rgba(0, 0, 0, 0.25);
+    .upgrade-card__title {
+        font-size: 32px;
+    }
+}
+.upgrade-card__saving {
+    width: 92%;
+    background-color: $color-secondary;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 5px 0;
+    position: absolute;
+    top: -13px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}

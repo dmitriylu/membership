@@ -1,0 +1,42 @@
+.footer {
+    background-color: #1E1F24;
+    color: #fff;
+    padding: 40px 0 19px;
+    font-size: 14px;
+}
+.footer__contact{
+    margin-bottom: 80px;
+    padding-right: 73px;
+}
+.footer__title {
+    @include font ($font-primary,14,500);
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 16px;
+}
+.footer__contact-item{
+    margin-bottom: 16px;
+}
+.footer__contact-icon{
+    margin-right: 15px;
+}
+.footer-list__item {
+    margin-bottom: 16px;
+}
+.socials {
+    margin-left: 100px;
+}
+.socials__item {
+    margin-right: 8px;
+}
+.footer__copyright,
+.footer__privacy {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 12px;
+}
+.footer__copyright {
+    margin-bottom: 15px;
+}
+.footer__privacy span {
+    color: #BBBCBD;
+}

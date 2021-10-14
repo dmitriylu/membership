@@ -1,0 +1,24 @@
+@media only screen and (max-width:768px){
+    .row.upgrade-cards {
+        margin-left: -12px;
+        margin-right: -12px;
+        .col-4 {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .footer-list {
+        margin-bottom: 30px;
+    }
+    .socials {
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width:768px) {
+    .upgrade__title {
+        font-size: 30px;
+    }
+}
